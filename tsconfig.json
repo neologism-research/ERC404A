@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "es2020",
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "paths": {
+      "/typechain/*": ["./typechain-types/*"],
+      "/utils/*": ["./utils/*"],
+      "/constants/*": ["./constants/*"],
+      "/types/*": ["./types/*"]
+    }
+  },
+  "include": ["deploy", "./deploy", "./tests", "./typechain-types", "./utils", "./constants", "./types", "./tasks"],
+  "files": ["./hardhat.config.ts"]
+}
